@@ -34,7 +34,7 @@ export function Footer({ className }) {
 				<div className={styles.widget_box}>
 					<h2 className={styles.widget_title}>Кузня первака</h2>
 					<p className={styles.widget_text}>© Все права защищены.</p>
-					<p className={styles.widget_text}>kuznyapervaka@yandex.ru</p>
+					<p className={styles.widget_text}>kuznyapervachka@yandex.ru</p>
 					<p className={styles.widget_text}>
 						606167, Нижегородская обл, Вачский р-н, деревня Звягино (Казаковский
 						с/с), ул. Молодежная, д.1А
@@ -42,14 +42,17 @@ export function Footer({ className }) {
 				</div>
 				<div className={styles.widget_box}>
 					<h2 className={styles.widget_title}>Мы в соцсетях</h2>
-					<Link to='#' className={styles.widget_link_icon}>
-						<FaTelegram size={45} />
+					<Link
+						to='https://t.me/kuznyapervachka'
+						className={styles.widget_link_icon}
+					>
+						<FaTelegram size={30} />
 					</Link>
 					<Link to='#' className={styles.widget_link_icon}>
-						<FaYoutube size={45} />
+						<FaYoutube size={30} />
 					</Link>
 					<Link to='#' className={styles.widget_link_icon}>
-						<FaVk size={45} />
+						<FaVk size={30} />
 					</Link>
 				</div>
 			</footer>

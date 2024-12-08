@@ -1,10 +1,30 @@
 .header {
+	display: flex;
+	justify-content: space-around;
+	background: rgba(67, 67, 67, 0.195);
+	align-items: center;
 }
 .nav {
+	border-left: solid;
+}
+.list {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+.Link {
+	text-decoration: none;
+	color: black;
+}
+.Link:hover {
+	color: black;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .action {
-}
-.phone {
-}
-.card {
+	display: flex;
+	gap: 0.5rem;
 }

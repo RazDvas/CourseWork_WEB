@@ -1,16 +1,37 @@
 .container {
+	display: flex;
+	justify-content: space-around;
+	background: rgba(67, 67, 67, 0.195);
+	gap: 0.3rem;
 }
 .logo {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	gap: 0.7rem;
+	border-right: solid;
 }
 .widget_box {
-}
-.widget_title {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
 }
 .widget_link {
+	text-decoration: none;
+	color: black;
+}
+.widget_link:hover {
+	color: black;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .widget_title {
 }
 .widget_text {
 }
 .widget_link_icon {
+	color: rgba(5, 0, 154, 0.764);
 }
