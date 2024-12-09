@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import styles from './NavMenu.module.css'
 
-export function NavMenu({ className }) {
+export function NavMenu({ navMenu }) {
 	return (
-		<div className={className}>
+		<div className={navMenu}>
 			<div className={styles.container}>
 				<div className={styles.search_product}>
 					<h3 className={styles.search}>Поле поиска</h3>

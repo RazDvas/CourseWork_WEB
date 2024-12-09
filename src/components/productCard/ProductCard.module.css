@@ -1,0 +1,22 @@
+.container {
+	box-shadow: 0px 0px 7px black;
+	gap: 0.4rem;
+}
+.image {
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.title {
+}
+.foot {
+	display: flex;
+	justify-content: space-around;
+	gap: 0.3rem;
+}
+.price {
+}
+.add {
+}

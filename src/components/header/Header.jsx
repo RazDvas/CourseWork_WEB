@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import { Logo } from '../logo/Logo.jsx'
 import styles from './Header.module.css'
 
-export function Header({ className }) {
+export function Header({ head }) {
 	return (
-		<div className={className}>
+		<div className={head}>
 			<header className={styles.header}>
 				<Logo />
 				<nav className={styles.nav}>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { Logo } from '../logo/Logo.jsx'
 import styles from './Footer.module.css'
 
-export function Footer({ className }) {
+export function Footer({ foter }) {
 	return (
-		<div className={className}>
+		<div className={foter}>
 			<footer className={styles.container}>
 				<div className={styles.logo}>
 					<Logo />
@@ -32,7 +32,7 @@ export function Footer({ className }) {
 					</Link>
 				</div>
 				<div className={styles.widget_box}>
-					<h2 className={styles.widget_title}>Кузня первака</h2>
+					<h2 className={styles.widget_title}>Кузня первачка</h2>
 					<p className={styles.widget_text}>© Все права защищены.</p>
 					<p className={styles.widget_text}>kuznyapervachka@yandex.ru</p>
 					<p className={styles.widget_text}>
