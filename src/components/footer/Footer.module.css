@@ -3,6 +3,7 @@
 	justify-content: space-around;
 	background: rgba(67, 67, 67, 0.195);
 	gap: 0.3rem;
+	border-radius: 10px;
 }
 .logo {
 	display: flex;
@@ -10,11 +11,12 @@
 	width: 200px;
 	gap: 0.7rem;
 	border-right: solid;
+	margin: 10px;
 }
 .widget_box {
 	display: flex;
 	flex-direction: column;
-	gap: 0.1rem;
+	/* gap: 0.1rem; */
 }
 .widget_link {
 	text-decoration: none;
@@ -27,10 +29,6 @@
 	-ms-transform: scale(1.05);
 	-o-transform: scale(1.05);
 	transform: scale(1.05);
-}
-.widget_title {
-}
-.widget_text {
 }
 .widget_link_icon {
 	color: rgba(5, 0, 154, 0.764);

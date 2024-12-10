@@ -1,3 +1,4 @@
+import { PiBasketFill } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 import styles from './NavMenu.module.css'
 
@@ -28,6 +29,9 @@ export function NavMenu({ navMenu }) {
 					</Link>
 					<Link to={'#'} className={styles.product_item}>
 						Сувениры
+					</Link>
+					<Link to={'/bascet'} className={styles.product_item}>
+						<PiBasketFill size={23} className={styles.bascetItem} />
 					</Link>
 				</div>
 			</div>

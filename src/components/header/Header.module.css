@@ -3,6 +3,7 @@
 	justify-content: space-around;
 	background: rgba(67, 67, 67, 0.195);
 	align-items: center;
+	border-radius: 10px;
 }
 .nav {
 	border-left: solid;
@@ -34,5 +35,5 @@
 }
 .action {
 	display: flex;
-	gap: 0.5rem;
+	gap: 1rem;
 }

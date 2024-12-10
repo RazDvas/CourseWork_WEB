@@ -1,3 +1,4 @@
+import { FaRegCircleUser } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import { Logo } from '../logo/Logo.jsx'
 import styles from './Header.module.css'
@@ -46,7 +47,7 @@ export function Header({ head }) {
 						+7 (XXX) XXX-XX-XX
 					</Link>
 					<Link to={'#'} className={styles.Link}>
-						Корзина
+						<FaRegCircleUser size={20} />
 					</Link>
 				</div>
 			</header>
