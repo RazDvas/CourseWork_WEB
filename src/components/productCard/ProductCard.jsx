@@ -8,8 +8,12 @@ export function ProductCard({ productCard, product }) {
 	return (
 		<div className={productCard}>
 			<div onClick={() => setIsModalOpen(true)} className={styles.container}>
-				<div className={styles.image}>
-					<img src={product} alt={`Image for product with id: ${product.id}`} />
+				<div className={styles.imageContainer}>
+					<img
+						className={styles.image}
+						src={product.image}
+						alt={`Image for product with id: ${product.id}`}
+					/>
 				</div>
 				<div className={styles.content}>
 					<div className={styles.title}>{product.title}</div>

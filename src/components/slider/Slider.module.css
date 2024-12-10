@@ -1,0 +1,38 @@
+.slider {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.sliderContent {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	min-width: 100%;
+	box-sizing: border-box;
+}
+
+.leftArrow,
+.rightArrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.leftArrow {
+	left: 10px;
+}
+
+.rightArrow {
+	right: 10px;
+}

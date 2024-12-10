@@ -1,4 +1,21 @@
+.page {
+}
+.navMenu {
+	margin: 8px;
+}
+.cupHolder {
+	text-align: center;
+	margin: 8px;
+}
+.slider {
+	margin: 8px;
+}
+
 .content {
 	display: flex;
 	justify-content: space-around;
+	overflow: hidden;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 20px;
 }

@@ -12,8 +12,8 @@
 	border: 0;
 	padding: 5px 0 7px;
 	border: 1px solid transparent;
-	border-bottom-color: #ccc;
-	trsansition: 0.4s;
+	border-bottom-color: #474747;
+	transition: 0.4s;
 }
 .input:focus {
 	padding: 5px 14px 7px;
@@ -44,4 +44,13 @@
 	text-decoration: none;
 	color: black;
 	gap: 0.5rem;
+}
+
+.product_item:hover {
+	color: black;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
 }
