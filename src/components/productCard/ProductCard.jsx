@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { BsCartPlus } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import { Counter } from '../../features/counter/Counter'
 import styles from './productCard.module.css'
 
 export function ProductCard({ productCard, product }) {
@@ -21,7 +23,10 @@ export function ProductCard({ productCard, product }) {
 					<div className={styles.foot}>
 						<div className={styles.price}>{product.price}</div>
 						<div className={styles.add}>
-							<BsCartPlus size={30} />
+							<Counter className={styles.backetButton} />
+							<Link to={'#'} className={styles.backetButton}>
+								<BsCartPlus size={30} />
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -11,32 +11,32 @@ export function Header({ head }) {
 				<nav className={styles.nav}>
 					<ul className={styles.list}>
 						<li className={styles.elem}>
-							<Link to={'#'} className={styles.Link}>
+							<Link to={'/'} className={styles.Link}>
 								Главная
 							</Link>
 						</li>
 						<li className={styles.elem}>
-							<Link to={'#'} className={styles.Link}>
+							<Link to={'/aboutUs'} className={styles.Link}>
 								О нас
 							</Link>
 						</li>
 						<li className={styles.elem}>
-							<Link to={'#'} className={styles.Link}>
+							<Link to={'/catalog'} className={styles.Link}>
 								Каталог
 							</Link>
 						</li>
 						<li className={styles.elem}>
-							<Link to={'#'} className={styles.Link}>
+							<Link to={'/paymentAndDelivery'} className={styles.Link}>
 								Оплата и доставка
 							</Link>
 						</li>
 						<li className={styles.elem}>
-							<Link to={'#'} className={styles.Link}>
-								Отзывы
+							<Link to={'/gallery'} className={styles.Link}>
+								Фотогалерея
 							</Link>
 						</li>
 						<li className={styles.elem}>
-							<Link to={'#'} className={styles.Link}>
+							<Link to={'/contact'} className={styles.Link}>
 								Контакты
 							</Link>
 						</li>

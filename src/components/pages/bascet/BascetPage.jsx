@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Counter } from '../../../features/counter/Counter'
 import { Footer } from '../../footer/Footer'
 import { Header } from '../../header/Header'
 import styles from './BascetPage.module.css'
