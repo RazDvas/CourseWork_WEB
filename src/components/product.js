@@ -1,4 +1,4 @@
-export const product = [
+export const productCupHolder = [
 	{
 		id: 1,
 		title: 'Подстаканник',
@@ -62,6 +62,346 @@ export const product = [
 		diameter: '6,8 см',
 		weight: '161 гр',
 		price: 2500,
+		count: 1,
+	},
+]
+
+export const productKnife = [
+	{
+		id: 1,
+		title: 'Нож',
+		image:
+			'https://avatars.mds.yandex.net/i?id=e28a3e141b1cc093c1ffddb003f37ff9_l-7546007-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 4000,
+		count: 1,
+	},
+	{
+		id: 2,
+		title: 'Нож',
+		image:
+			'https://avatars.mds.yandex.net/i?id=e28a3e141b1cc093c1ffddb003f37ff9_l-7546007-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 4000,
+		count: 1,
+	},
+	{
+		id: 3,
+		title: 'Нож',
+		image:
+			'https://avatars.mds.yandex.net/i?id=e28a3e141b1cc093c1ffddb003f37ff9_l-7546007-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 4000,
+		count: 1,
+	},
+	{
+		id: 4,
+		title: 'Нож',
+		image:
+			'https://avatars.mds.yandex.net/i?id=e28a3e141b1cc093c1ffddb003f37ff9_l-7546007-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 4000,
+		count: 1,
+	},
+	{
+		id: 5,
+		title: 'Нож',
+		image:
+			'https://avatars.mds.yandex.net/i?id=e28a3e141b1cc093c1ffddb003f37ff9_l-7546007-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 4000,
+		count: 1,
+	},
+]
+
+export const productSkewers = [
+	{
+		id: 1,
+		title: 'Шампур',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7d2bc11788353e176daf12f66544aea58323bb3a-4779391-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1500,
+		count: 1,
+	},
+	{
+		id: 2,
+		title: 'Шампур',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7d2bc11788353e176daf12f66544aea58323bb3a-4779391-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1500,
+		count: 1,
+	},
+	{
+		id: 3,
+		title: 'Шампур',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7d2bc11788353e176daf12f66544aea58323bb3a-4779391-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1500,
+		count: 1,
+	},
+	{
+		id: 4,
+		title: 'Шампур',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7d2bc11788353e176daf12f66544aea58323bb3a-4779391-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1500,
+		count: 1,
+	},
+	{
+		id: 5,
+		title: 'Шампур',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7d2bc11788353e176daf12f66544aea58323bb3a-4779391-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1500,
+		count: 1,
+	},
+]
+
+export const productLighter = [
+	{
+		id: 1,
+		title: 'Зажигалка',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7c878d61c72188f06309329e3be8c0d9_l-5220568-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1000,
+		count: 1,
+	},
+	{
+		id: 2,
+		title: 'Зажигалка',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7c878d61c72188f06309329e3be8c0d9_l-5220568-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1000,
+		count: 1,
+	},
+	{
+		id: 3,
+		title: 'Зажигалка',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7c878d61c72188f06309329e3be8c0d9_l-5220568-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1000,
+		count: 1,
+	},
+	{
+		id: 4,
+		title: 'Зажигалка',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7c878d61c72188f06309329e3be8c0d9_l-5220568-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1000,
+		count: 1,
+	},
+	{
+		id: 5,
+		title: 'Зажигалка',
+		image:
+			'https://avatars.mds.yandex.net/i?id=7c878d61c72188f06309329e3be8c0d9_l-5220568-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 1000,
+		count: 1,
+	},
+]
+
+export const producCigaretteCases = [
+	{
+		id: 1,
+		title: 'Портсигар',
+		image:
+			'https://avatars.mds.yandex.net/i?id=ea6be3be906b00fcfb6c15d55d95cd76_l-3752796-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 3000,
+		count: 1,
+	},
+	{
+		id: 2,
+		title: 'Портсигар',
+		image:
+			'https://avatars.mds.yandex.net/i?id=ea6be3be906b00fcfb6c15d55d95cd76_l-3752796-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 3000,
+		count: 1,
+	},
+	{
+		id: 3,
+		title: 'Портсигар',
+		image:
+			'https://avatars.mds.yandex.net/i?id=ea6be3be906b00fcfb6c15d55d95cd76_l-3752796-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 3000,
+		count: 1,
+	},
+	{
+		id: 4,
+		title: 'Портсигар',
+		image:
+			'https://avatars.mds.yandex.net/i?id=ea6be3be906b00fcfb6c15d55d95cd76_l-3752796-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 3000,
+		count: 1,
+	},
+	{
+		id: 5,
+		title: 'Портсигар',
+		image:
+			'https://avatars.mds.yandex.net/i?id=ea6be3be906b00fcfb6c15d55d95cd76_l-3752796-images-thumbs&n=13',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 3000,
+		count: 1,
+	},
+]
+
+export const producSouvenirs = [
+	{
+		id: 1,
+		title: 'Сувенир',
+		image:
+			'https://mdrussia.ru/uploads/monthly_2017_06/image(15).JPG.6a74636bb2de678b834c9b97e79c2df9.JPG',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 5000,
+		count: 1,
+	},
+	{
+		id: 2,
+		title: 'Сувенир',
+		image:
+			'https://mdrussia.ru/uploads/monthly_2017_06/image(15).JPG.6a74636bb2de678b834c9b97e79c2df9.JPG',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 5000,
+		count: 1,
+	},
+	{
+		id: 3,
+		title: 'Сувенир',
+		image:
+			'https://mdrussia.ru/uploads/monthly_2017_06/image(15).JPG.6a74636bb2de678b834c9b97e79c2df9.JPG',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 5000,
+		count: 1,
+	},
+	{
+		id: 4,
+		title: 'Сувенир',
+		image:
+			'https://mdrussia.ru/uploads/monthly_2017_06/image(15).JPG.6a74636bb2de678b834c9b97e79c2df9.JPG',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 5000,
+		count: 1,
+	},
+	{
+		id: 5,
+		title: 'Сувенир',
+		image:
+			'https://mdrussia.ru/uploads/monthly_2017_06/image(15).JPG.6a74636bb2de678b834c9b97e79c2df9.JPG',
+		materials: 'Латунь Л68',
+		productCoating: 'Никель с позолотой',
+		height: '10 см',
+		diameter: '6,8 см',
+		weight: '161 гр',
+		price: 5000,
 		count: 1,
 	},
 ]

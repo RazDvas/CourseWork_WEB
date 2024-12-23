@@ -1,12 +1,13 @@
-.title {
-	text-align: center;
-}
-
-.imageContainer {
+.content {
 	display: flex;
 	justify-content: space-around;
 	overflow: hidden;
 	flex-wrap: wrap;
 	gap: 1rem;
 	margin: 20px;
+}
+
+.cupHolder {
+	text-align: center;
+	margin: 8px;
 }
