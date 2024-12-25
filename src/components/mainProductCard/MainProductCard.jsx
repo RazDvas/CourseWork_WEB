@@ -7,13 +7,16 @@ import {
 	productSkewers,
 } from '../product'
 import { ProductCard } from '../productCard/ProductCard'
+import { Section } from '../section/Section'
 import styles from './MainProductCard.module.css'
 
 export function MainProductCard({}) {
 	return (
 		<div className={MainProductCard}>
 			<div className={styles.container}>
-				<h2 className={styles.cupHolder}>Ножи подарочные</h2>
+				<Section id='section1' className={styles.cupHolder}>
+					Подарочные ножи
+				</Section>
 				<div className={styles.content}>
 					{productKnife.map(productKnife => (
 						<ProductCard
@@ -23,7 +26,9 @@ export function MainProductCard({}) {
 						/>
 					))}
 				</div>
-				<h2 className={styles.cupHolder}>Шампура</h2>
+				<Section id='section2' className={styles.cupHolder}>
+					Шампура
+				</Section>
 				<div className={styles.content}>
 					{productSkewers.map(productSkewers => (
 						<ProductCard
@@ -33,7 +38,9 @@ export function MainProductCard({}) {
 						/>
 					))}
 				</div>
-				<h2 className={styles.cupHolder}>Зажигалки</h2>
+				<Section id='section3' className={styles.cupHolder}>
+					Зажигалки
+				</Section>
 				<div className={styles.content}>
 					{productLighter.map(productLighter => (
 						<ProductCard
@@ -43,7 +50,9 @@ export function MainProductCard({}) {
 						/>
 					))}
 				</div>
-				<h2 className={styles.cupHolder}>Портсигары</h2>
+				<Section id='section4' className={styles.cupHolder}>
+					Портсигары
+				</Section>
 				<div className={styles.content}>
 					{producCigaretteCases.map(producCigaretteCases => (
 						<ProductCard
@@ -53,7 +62,9 @@ export function MainProductCard({}) {
 						/>
 					))}
 				</div>
-				<h2 className={styles.cupHolder}>Подстаканники</h2>
+				<Section id='section5' className={styles.cupHolder}>
+					Подстаканники
+				</Section>
 				<div className={styles.content}>
 					{productCupHolder.map(productCupHolder => (
 						<ProductCard
@@ -63,7 +74,9 @@ export function MainProductCard({}) {
 						/>
 					))}
 				</div>
-				<h2 className={styles.cupHolder}>Сувениры</h2>
+				<Section id='section6' className={styles.cupHolder}>
+					Сувениры
+				</Section>
 				<div className={styles.content}>
 					{producSouvenirs.map(producSouvenirs => (
 						<ProductCard

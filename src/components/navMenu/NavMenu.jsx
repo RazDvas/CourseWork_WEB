@@ -1,5 +1,6 @@
 import { PiBasketFill } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
+import { NavButton } from '../navButton/NavButton'
 import styles from './NavMenu.module.css'
 
 export function NavMenu({ navMenu }) {
@@ -12,24 +13,24 @@ export function NavMenu({ navMenu }) {
 					<span class='focus-border' />
 				</div>
 				<div className={styles.list_product}>
-					<Link to={'#'} className={styles.product_item}>
+					<NavButton targetId='section1' className={styles.product_item}>
 						Ножи подарочные
-					</Link>
-					<Link to={'#'} className={styles.product_item}>
+					</NavButton>
+					<NavButton targetId='section2' className={styles.product_item}>
 						Шампура
-					</Link>
-					<Link to={'#'} className={styles.product_item}>
+					</NavButton>
+					<NavButton targetId='section3' className={styles.product_item}>
 						Зажигалки
-					</Link>
-					<Link to={'#'} className={styles.product_item}>
+					</NavButton>
+					<NavButton targetId='section4' className={styles.product_item}>
 						Портсигары
-					</Link>
-					<Link to={'#'} className={styles.product_item}>
+					</NavButton>
+					<NavButton targetId='section5' className={styles.product_item}>
 						Подстаканники
-					</Link>
-					<Link to={'#'} className={styles.product_item}>
+					</NavButton>
+					<NavButton targetId='section6' className={styles.product_item}>
 						Сувениры
-					</Link>
+					</NavButton>
 					<Link to={'/bascet'} className={styles.product_item}>
 						<PiBasketFill size={23} className={styles.bascetItem} />
 					</Link>

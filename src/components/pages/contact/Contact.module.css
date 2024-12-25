@@ -1,7 +1,24 @@
 .title {
 	text-align: center;
+	text-decoration-line: overline, underline;
 }
 
 .map {
 	margin: 10px;
+}
+
+.informationText {
+	font-weight: bold;
+	padding: 20px 0px;
+	text-transform: uppercase;
+	line-height: 1;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.informationText:hover {
+	color: #000000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-moz-text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px #000;
 }
