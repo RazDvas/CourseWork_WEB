@@ -5,6 +5,7 @@ import { BascetPage } from './components/pages/bascet/BascetPage'
 import { Catalog } from './components/pages/catalog/Catalog'
 import { Contact } from './components/pages/contact/Contact'
 import { Gallery } from './components/pages/gallery/Gallery'
+import { LoginPage } from './components/pages/LoginPage/LoginPage'
 import { MainPage } from './components/pages/main/MainPage'
 import { Payment } from './components/pages/payment and delivery/Payment'
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
 	{
 		path: '/paymentAndDelivery',
 		element: <Payment />,
+	},
+	{
+		path: '/loginpage',
+		element: <LoginPage />,
 	},
 ])
 

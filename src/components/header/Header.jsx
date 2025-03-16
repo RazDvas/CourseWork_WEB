@@ -1,9 +1,13 @@
+import React, { useContext } from 'react'
 import { FaRegCircleUser } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import { UserContext } from '../UserContext/UserContext.jsx' // Импортируйте контекст
 import { Logo } from '../logo/Logo.jsx'
 import styles from './Header.module.css'
 
 export function Header({ head }) {
+	const { user } = useContext(UserContext) // Получаем данные пользователя
+
 	return (
 		<div className={head}>
 			<header className={styles.header}>
@@ -44,9 +48,10 @@ export function Header({ head }) {
 				</nav>
 				<div className={styles.action}>
 					<Link to={'#'} className={styles.Link}>
-						+7 (XXX) XXX-XX-XX
+						{user ? user.name : 'Гость'}{' '}
+						{/* Отображаем имя пользователя или "Гость" */}
 					</Link>
-					<Link to={'#'} className={styles.Link}>
+					<Link to={'/loginpage'} className={styles.Link}>
 						<FaRegCircleUser size={20} />
 					</Link>
 				</div>

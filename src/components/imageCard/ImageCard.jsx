@@ -1,20 +1,17 @@
-import { useState } from 'react'
+import React from 'react'
 import styles from './ImageCard.module.css'
 
-export function ImageCard({ ImageCard, product }) {
-	const [isModalOpen, setIsModalOpen] = useState(false)
-
+export function ImageCard({ product, className }) {
 	return (
-		<div className={ImageCard}>
-			<div onClick={() => setIsModalOpen(true)} className={styles.container}>
-				<div className={styles.imageContainer}>
-					<img
-						className={styles.image}
-						src={product.image}
-						alt={`Image for product with id: ${product.id}`}
-					/>
-				</div>
-			</div>
+		<div className={`${styles.imageCard} ${className}`}>
+			<img
+				src={product.image_url}
+				alt={product.description || 'Изображение галереи'}
+				className={styles.image}
+			/>
+			{product.description && (
+				<p className={styles.description}>{product.description}</p>
+			)}
 		</div>
 	)
 }
