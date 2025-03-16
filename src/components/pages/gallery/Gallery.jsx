@@ -8,6 +8,7 @@ export function Gallery() {
 	const [galleryImages, setGalleryImages] = useState([]) // Состояние для хранения данных
 	const [loading, setLoading] = useState(true) // Состояние для отображения загрузки
 	const [error, setError] = useState(null) // Состояние для обработки ошибок
+	const [selectedImage, setSelectedImage] = useState(null) // Состояние для выбранного изображения
 
 	// Загрузка данных с API
 	useEffect(() => {
@@ -29,6 +30,16 @@ export function Gallery() {
 		fetchData()
 	}, [])
 
+	// Функция для открытия изображения в модальном окне
+	const openImage = image => {
+		setSelectedImage(image)
+	}
+
+	// Функция для закрытия модального окна
+	const closeImage = () => {
+		setSelectedImage(null)
+	}
+
 	// Отображение состояния загрузки
 	if (loading) {
 		return <div>Загрузка данных...</div>
@@ -40,33 +51,55 @@ export function Gallery() {
 	}
 
 	return (
-		<div className={styles.Gallery}>
+		<>
 			<Header />
-			<div className={styles.container}>
-				<h1 className={styles.title}>Галерея</h1>
-				<div className={styles.preText}>
-					<p>
-						Зародившись много тысяч лет назад, искусство художественного литья и
-						сегодня обретает новых поклонников, будоражит умы магией превращений
-						металла, восхищает взоры прекрасными формами изделий.
-					</p>
-					<p>
-						В России художественное литьё всегда пользовалось неизменным
-						успехом. Литейщики, вдохновлённые опытом старых мастеров,
-						совершенствуют технологии и создают новые творения, которые дарят
-						людям глубокое эстетическое наслаждение.
-					</p>
-					<h3 className={styles.title}>
-						Художественное литье — ремесло благородное. Убедитесь в этом сами!
-					</h3>
+			<div className={styles.galleryContainer}>
+				<div className={styles.container}>
+					<h1 className={styles.title}>Галерея</h1>
+					<div className={styles.preText}>
+						<p>
+							Зародившись много тысяч лет назад, искусство художественного литья
+							и сегодня обретает новых поклонников, будоражит умы магией
+							превращений металла, восхищает взоры прекрасными формами изделий.
+						</p>
+						<p>
+							В России художественное литьё всегда пользовалось неизменным
+							успехом. Литейщики, вдохновлённые опытом старых мастеров,
+							совершенствуют технологии и создают новые творения, которые дарят
+							людям глубокое эстетическое наслаждение.
+						</p>
+						<h3 className={styles.title}>
+							Художественное литье — ремесло благородное. Убедитесь в этом сами!
+						</h3>
+					</div>
+					<div className={styles.imageContainer}>
+						{galleryImages.map(image => (
+							<div key={image.id} onClick={() => openImage(image)}>
+								<ImageCard product={image} className={styles.elem} />
+							</div>
+						))}
+					</div>
 				</div>
-				<div className={styles.imageContainer}>
-					{galleryImages.map(image => (
-						<ImageCard key={image.id} product={image} className={styles.elem} />
-					))}
-				</div>
+
+				{/* Модальное окно для отображения изображения во весь размер */}
+				{selectedImage && (
+					<div className={styles.modalOverlay} onClick={closeImage}>
+						<div className={styles.modalContent}>
+							<img
+								src={selectedImage.image_url}
+								alt={selectedImage.description || 'Изображение галереи'}
+								className={styles.fullSizeImage}
+							/>
+							{selectedImage.description && (
+								<p className={styles.modalDescription}>
+									{selectedImage.description}
+								</p>
+							)}
+						</div>
+					</div>
+				)}
 			</div>
 			<Footer />
-		</div>
+		</>
 	)
 }

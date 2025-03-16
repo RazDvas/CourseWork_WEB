@@ -7,11 +7,6 @@ export function NavMenu({ navMenu }) {
 	return (
 		<div className={navMenu}>
 			<div className={styles.container}>
-				{/* <div className={styles.search_product}>
-					<h3 className={styles.search}>Поле поиска</h3>
-					<input type='text' className={styles.input} />
-					<span class='focus-border' />
-				</div> */}
 				<div className={styles.list_product}>
 					<NavButton targetId='section1' className={styles.product_item}>
 						Подарочные ножи

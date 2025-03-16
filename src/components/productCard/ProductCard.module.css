@@ -1,124 +1,58 @@
 .productCard {
 	border: 1px solid #ccc;
 	border-radius: 8px;
-	padding: 10px;
+	padding: 16px;
+	margin: 16px;
 	text-align: center;
-	cursor: pointer;
-	transition: transform 0.2s, box-shadow 0.2s;
+	width: 250px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s;
 }
 
 .productCard:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transform: scale(1.05);
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.imageContainer {
+.productImage {
 	width: 100%;
-	height: 200px;
-	overflow: hidden;
+	height: auto;
 	border-radius: 8px;
 }
 
-.image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.content {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-}
-
-.title {
+.productName {
 	font-size: 1.2rem;
-	font-weight: bold;
+	margin: 10px 0;
 }
 
-.description {
+.productDescription {
 	font-size: 0.9rem;
 	color: #666;
+	margin: 10px 0;
 }
 
-.material {
+.productMaterial {
 	font-size: 0.9rem;
 	color: #444;
+	margin: 10px 0;
 }
 
-.foot {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.price {
+.productPrice {
 	font-size: 1.1rem;
 	font-weight: bold;
 	color: #333;
+	margin: 10px 0;
 }
 
 .addToCartButton {
-	padding: 5px 10px;
 	background-color: #007bff;
 	color: white;
 	border: none;
-	border-radius: 4px;
+	padding: 10px 20px;
+	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.2s;
 }
 
 .addToCartButton:hover {
 	background-color: #0056b3;
-}
-
-.modalOverlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1000;
-}
-
-.modalContent {
-	background-color: white;
-	padding: 20px;
-	border-radius: 8px;
-	max-width: 500px;
-	width: 100%;
-	text-align: center;
-}
-
-.modalImage {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 8px;
-	margin-bottom: 10px;
-}
-
-.closeButton {
-	margin-top: 10px;
-	padding: 5px 10px;
-	background-color: #dc3545;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	transition: background-color 0.2s;
-}
-
-.closeButton:hover {
-	background-color: #c82333;
 }
