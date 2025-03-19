@@ -3,7 +3,7 @@ import { UserContext } from '../UserContext/UserContext'
 import styles from './ProductCard.module.css'
 
 export function ProductCard({ product }) {
-	const { user } = useContext(UserContext) // Получаем данные пользователя из контекста
+	const { user } = useContext(UserContext)
 
 	const handleAddToCart = async () => {
 		if (!user || !user.user_id) {
@@ -23,7 +23,7 @@ export function ProductCard({ product }) {
 				quantity: 1,
 			}
 
-			console.log('Отправляемые данные:', requestBody) // Логирование данных
+			console.log('Отправляемые данные:', requestBody)
 
 			const response = await fetch('http://localhost:5000/api/cart', {
 				method: 'POST',
@@ -33,14 +33,14 @@ export function ProductCard({ product }) {
 				body: JSON.stringify(requestBody),
 			})
 
-			console.log('Статус ответа:', response.status) // Логирование статуса ответа
+			console.log('Статус ответа:', response.status)
 
 			if (!response.ok) {
 				throw new Error('Ошибка при добавлении товара в корзину')
 			}
 
 			const data = await response.json()
-			console.log('Ответ от сервера:', data) // Логирование ответа
+			console.log('Ответ от сервера:', data)
 
 			if (data.success) {
 				alert('Товар успешно добавлен в корзину!')

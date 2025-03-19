@@ -5,47 +5,43 @@ import { ImageCard } from '../../ImageCard/ImageCard'
 import styles from './Gallery.module.css'
 
 export function Gallery() {
-	const [galleryImages, setGalleryImages] = useState([]) // Состояние для хранения данных
-	const [loading, setLoading] = useState(true) // Состояние для отображения загрузки
-	const [error, setError] = useState(null) // Состояние для обработки ошибок
-	const [selectedImage, setSelectedImage] = useState(null) // Состояние для выбранного изображения
+	const [galleryImages, setGalleryImages] = useState([])
+	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
+	const [selectedImage, setSelectedImage] = useState(null)
 
 	// Загрузка данных с API
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('http://localhost:5000/api/gallery') // Запрос к API
+				const response = await fetch('http://localhost:5000/api/gallery')
 				if (!response.ok) {
 					throw new Error('Ошибка при загрузке данных')
 				}
 				const data = await response.json()
-				setGalleryImages(data) // Сохраняем данные в состоянии
-				setLoading(false) // Загрузка завершена
+				setGalleryImages(data)
+				setLoading(false)
 			} catch (error) {
-				setError(error.message) // Сохраняем ошибку
-				setLoading(false) // Загрузка завершена
+				setError(error.message)
+				setLoading(false)
 			}
 		}
 
 		fetchData()
 	}, [])
 
-	// Функция для открытия изображения в модальном окне
 	const openImage = image => {
 		setSelectedImage(image)
 	}
 
-	// Функция для закрытия модального окна
 	const closeImage = () => {
 		setSelectedImage(null)
 	}
 
-	// Отображение состояния загрузки
 	if (loading) {
 		return <div>Загрузка данных...</div>
 	}
 
-	// Отображение ошибки
 	if (error) {
 		return <div>Ошибка: {error}</div>
 	}

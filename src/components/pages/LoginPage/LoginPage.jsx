@@ -29,12 +29,10 @@ export function LoginPage() {
 			const data = await response.json()
 
 			if (data.success) {
-				// Авторизация успешна
-				localStorage.setItem('user', JSON.stringify(data.user)) // Сохраняем данные пользователя
-				setUser(data.user) // Обновляем состояние пользователя в контексте
-				navigate('/') // Перенаправляем на главную страницу
+				localStorage.setItem('user', JSON.stringify(data.user))
+				setUser(data.user)
+				navigate('/')
 			} else {
-				// Ошибка авторизации
 				setError(data.message || 'Неверный email или пароль')
 			}
 		} catch (error) {
@@ -57,11 +55,9 @@ export function LoginPage() {
 			const data = await response.json()
 
 			if (data.success) {
-				// Регистрация успешна
 				setError('Регистрация прошла успешно. Теперь вы можете войти.')
-				setIsRegistering(false) // Переключаем на режим авторизации
+				setIsRegistering(false)
 			} else {
-				// Ошибка регистрации
 				setError(data.message || 'Ошибка при регистрации')
 			}
 		} catch (error) {

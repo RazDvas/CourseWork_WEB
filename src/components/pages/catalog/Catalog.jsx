@@ -1,46 +1,43 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom' // Для перенаправления
+import { useNavigate } from 'react-router-dom'
 import { Footer } from '../../footer/Footer'
 import { Header } from '../../header/Header'
 import styles from './Catalog.module.css'
 
 export function Catalog() {
-	const [categories, setCategories] = useState([]) // Состояние для хранения категорий
-	const [loading, setLoading] = useState(true) // Состояние для отображения загрузки
-	const [error, setError] = useState(null) // Состояние для обработки ошибок
+	const [categories, setCategories] = useState([])
+	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
 	const navigate = useNavigate()
 
 	// Загрузка данных с API
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('http://localhost:5000/api/categories') // Запрос к API
+				const response = await fetch('http://localhost:5000/api/categories')
 				if (!response.ok) {
 					throw new Error('Ошибка при загрузке данных')
 				}
 				const data = await response.json()
-				setCategories(data) // Сохраняем данные в состоянии
-				setLoading(false) // Загрузка завершена
+				setCategories(data)
+				setLoading(false)
 			} catch (error) {
-				setError(error.message) // Сохраняем ошибку
-				setLoading(false) // Загрузка завершена
+				setError(error.message)
+				setLoading(false)
 			}
 		}
 
 		fetchData()
 	}, [])
 
-	// Обработка клика по категории
 	const handleCategoryClick = categoryId => {
-		navigate(`/?section=${categoryId}`) // Перенаправляем на главную страницу с параметром
+		navigate(`/?section=${categoryId}`)
 	}
 
-	// Отображение состояния загрузки
 	if (loading) {
 		return <div>Загрузка данных...</div>
 	}
 
-	// Отображение ошибки
 	if (error) {
 		return <div>Ошибка: {error}</div>
 	}

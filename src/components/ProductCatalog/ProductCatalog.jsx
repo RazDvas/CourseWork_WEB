@@ -3,24 +3,24 @@ import { ProductList } from '../ProductList/ProductList'
 import styles from './ProductCatalog.module.css'
 
 export function ProductCatalog() {
-	const [products, setProducts] = useState([]) // Состояние для хранения товаров
-	const [loading, setLoading] = useState(true) // Состояние для отображения загрузки
-	const [error, setError] = useState(null) // Состояние для обработки ошибок
+	const [products, setProducts] = useState([])
+	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
 
 	// Загрузка данных с API
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('http://localhost:5000/api/products') // Запрос к API
+				const response = await fetch('http://localhost:5000/api/products')
 				if (!response.ok) {
 					throw new Error('Ошибка при загрузке данных')
 				}
 				const data = await response.json()
-				setProducts(data) // Сохраняем данные в состоянии
-				setLoading(false) // Загрузка завершена
+				setProducts(data)
+				setLoading(false)
 			} catch (error) {
-				setError(error.message) // Сохраняем ошибку
-				setLoading(false) // Загрузка завершена
+				setError(error.message)
+				setLoading(false)
 			}
 		}
 
@@ -32,12 +32,10 @@ export function ProductCatalog() {
 		return products.filter(product => product.category_id === categoryId)
 	}
 
-	// Отображение состояния загрузки
 	if (loading) {
 		return <div>Загрузка данных...</div>
 	}
 
-	// Отображение ошибки
 	if (error) {
 		return <div>Ошибка: {error}</div>
 	}
